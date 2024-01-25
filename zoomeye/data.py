@@ -358,9 +358,9 @@ class CliZoomEye:#处理与ZoomEye搜索相关的功能，如默认显示、过�
         except ValueError:
             if self.num == 'all':
                 for i in range(3):
-                    user_confirm = input("The data may exceed your quota. "
-                                         "If the quota is exceeded, all quota data will be returned. "
-                                         "Are you sure you want to get all the data?(y/N)\n")
+                    user_confirm = 'y' #remove the annoying message input("The data may exceed your quota. "
+                                       #  "If the quota is exceeded, all quota data will be returned. "
+                                       #  "Are you sure you want to get all the data?(y/N)\n")
                     if user_confirm == 'y':
                         self.zoomeye.dork_search(
                             dork=self.dork,
