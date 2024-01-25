@@ -62,7 +62,8 @@ def init(args):#根据用户输入的参数来选择初始化方法，可以通�
 
 def search(args):#进行搜索操作，根据用户输入的搜索条件进行搜索
     dork = args.dork
-    num = int(args.num)
+    #num = int(args.num)
+    num = args.num
     facet = args.facet
     filters = args.filter
     stat = args.stat
