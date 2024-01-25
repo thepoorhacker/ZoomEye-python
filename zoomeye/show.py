@@ -82,7 +82,7 @@ def show_host_default_data(data_list, count):
     """
     total = 0
     # print title
-    printf("{:<25}{:<20}{:<20}{:<30}{:<30}".format(
+    #printf("{:<25}{:<20}{:<20}{:<30}{:<30}".format(
         "ip:port", "service", "country", "app", "banner"), color="green")
 
     # process data
@@ -96,12 +96,12 @@ def show_host_default_data(data_list, count):
 
         # print result
         total += 1
-        printf('{:<25}{:<20}{:<20}{:<30}{:30}'.format(
-            "{}:{}".format(ip, port), service, country, app_name,
-            banner_content)
-        )
+        #printf('{:<25}{:<20}{:<20}{:<30}{:30}'.format(
+        #    "{}:{}".format(ip, port), service, country, app_name,
+        #    banner_content)
+        printf("{}:{}".format(ip, port), service, country, app_name,banner_content)
     print()
-    printf("total: {}/{}".format(total, count))
+    #printf("total: {}/{}".format(total, count))
 
 
 def show_web_default_data(data_list, count):
